@@ -6,8 +6,8 @@ This project showcases an example implementation of a custom memory allocator. T
 
 ## Advantages
 
-- No linking to the CRT library on Windows.
-- No calls to Windows API functions.
+- Avoid heap usage or linking to the CRT library on Windows.
+- Avoid calling Windows API functions.
 - All allocations and deallocations within your application can be redirected to the custom allocators.
 
 ## Limitations
