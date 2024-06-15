@@ -87,7 +87,7 @@ auto Memory::free(const std::byte *const block_byte) noexcept -> std::expected<v
         return {};
     }
     while ( block->has_next_block() ) {
-        auto next_block = block = block->get_next_block();
+        auto next_block = block->get_next_block();
         if ( next_block->get_data() == block_byte ) {
             block->set_next_block(next_block->get_next_block());
             std::destroy_at(next_block);

@@ -68,7 +68,7 @@ private:
 
 public:
     union {
-        std::array<std::byte, 35> bytes {};
+        std::array<std::byte, 53> bytes {};
         Block first_block;
     };
 
